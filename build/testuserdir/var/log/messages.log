@@ -1,5 +1,5 @@
 -------------------------------------------------------------------------------
->Log Session: Monday, April 9, 2018 3:30:50 PM CEST
+>Log Session: Monday, April 9, 2018 3:46:10 PM CEST
 >System Info: 
   Product Version         = Application_contact 201609300101
   Operating System        = Windows 10 version 10.0 running on amd64
@@ -85,6 +85,26 @@ INFO [org.netbeans.core.network.proxy.windows.WindowsNetworkProxy]: Windows syst
 INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network proxy reloading succeeded.
 INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network proxy - mode: direct
 INFO [org.netbeans.core.network.proxy.NetworkProxyReloader]: System network proxy: fell to default (correct if direct mode went before)
+java.lang.IllegalStateException: no splash screen available
+	at java.awt.SplashScreen.checkVisible(SplashScreen.java:197)
+	at java.awt.SplashScreen.update(SplashScreen.java:324)
+	at org.netbeans.core.startup.Splash$SplashPainter.repaint(Splash.java:401)
+	at org.netbeans.core.startup.Splash$SplashPainter$2.run(Splash.java:516)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:80)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726)
+	at org.netbeans.core.TimableEventQueue.dispatchEvent(TimableEventQueue.java:159)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
 INFO [org.netbeans.ui.metrics.laf]: USG_LOOK_AND_FEEL
 Diagnostic information
 Input arguments:
@@ -110,9 +130,9 @@ Input arguments:
 Compiler: HotSpot 64-Bit Tiered Compilers
 Heap memory usage: initial 126,0MB maximum 1790,5MB
 Non heap memory usage: initial 2,4MB maximum -1b
-Garbage collector: PS Scavenge (Collections=5 Total time spent=0s)
+Garbage collector: PS Scavenge (Collections=7 Total time spent=0s)
 Garbage collector: PS MarkSweep (Collections=2 Total time spent=0s)
-Classes: loaded=6536 total loaded=6536 unloaded 0
+Classes: loaded=6537 total loaded=6537 unloaded 0
 INFO [org.netbeans.core.ui.warmup.DiagnosticTask]: Total memory 8 443 035 648
 INFO [null]: Total physical memory 8 443 035 648
 WARNING [org.openide.filesystems.Ordering]: Not all children in Menu/Window/ marked with the position attribute: [m1-piu-ContactDetailsTopComponent.shadow, m1-piu-ContactListTopComponent.shadow, m1-piu-ContactToolbarPanelfxTopComponent.shadow, m1-piu-LeftPanelTopComponent.shadow], but some are: [org-netbeans-core-io-ui-IOWindowAction.shadow, SwitchToRecentDocumentAction.shadow, Web, Tools, Separator3.instance, ConfigureWindow, org-netbeans-core-windows-actions-ResetWindowsAction.shadow, Separator4.instance, CloseWindowAction.shadow, CloseAllDocumentsAction.shadow, CloseAllButThisAction.shadow, GroupsMenuAction.shadow, DocumentsAction.shadow]
